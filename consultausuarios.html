@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tabla de Usuarios</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+                margin: 0;
+                padding: 20px;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin-bottom: 20px;
+                background-color: #333;
+                overflow: hidden;
+            }
+
+            ul li {
+                display: inline;
+            }
+
+            ul li a {
+                color: white;
+                text-decoration: none;
+                padding: 14px 20px;
+                display: inline-block;
+            }
+
+            ul li a:hover {
+                background-color: #575757;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                overflow: hidden;
+            }
+
+            th, td {
+                padding: 12px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+
+            th {
+                background-color: #4CAF50;
+                color: white;
+            }
+
+            tr:hover {
+                background-color: #f5f5f5;
+            }
+
+            .btn {
+                padding: 5px 10px;
+                border: none;
+                border-radius: 4px;
+                color: white;
+                cursor: pointer;
+            }
+
+            .btn-edit {
+                background-color: #ffa500; /* Naranja para Editar */
+            }
+
+            .btn-delete {
+                background-color: #ff4c4c; /* Rojo para Borrar */
+            }
+
+            .btn-edit:hover {
+                background-color: #e59400;
+            }
+
+            .btn-delete:hover {
+                background-color: #e04343;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nuevousuario.html">Nuevo Usuario</a></li>
+            <li><a href="consultausuarios.html">Consulta Usuarios</a></li>
+            <li><a href="nuevoarticulo.html">Nuevo Artículo</a></li>
+            <li><a href="consultaarticulos.html">Consulta Artículos</a></li>
+        </ul>
+
+        <!-- Tabla de Usuarios -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Género</th>
+                    <th>Email</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan Pérez</td>
+                    <td>Masculino</td>
+                    <td>juan.perez@example.com</td>
+                    <td>
+                        <button class="btn btn-edit">Editar</button>
+                        <button class="btn btn-delete">Borrar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Maria López</td>
+                    <td>Femenino</td>
+                    <td>maria.lopez@example.com</td>
+                    <td>
+                        <button class="btn btn-edit">Editar</button>
+                        <button class="btn btn-delete">Borrar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Carlos García</td>
+                    <td>Masculino</td>
+                    <td>carlos.garcia@example.com</td>
+                    <td>
+                        <button class="btn btn-edit">Editar</button>
+                        <button class="btn btn-delete">Borrar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lucía Fernández</td>
+                    <td>Femenino</td>
+                    <td>lucia.fernandez@example.com</td>
+                    <td>
+                        <button class="btn btn-edit">Editar</button>
+                        <button class="btn btn-delete">Borrar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pedro Sánchez</td>
+                    <td>Masculino</td>
+                    <td>pedro.sanchez@example.com</td>
+                    <td>
+                        <button class="btn btn-edit">Editar</button>
+                        <button class="btn btn-delete">Borrar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
